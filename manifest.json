@@ -1,0 +1,25 @@
+{
+  "platform-version": "2.2",
+  "dependencies": {
+    "request": "2.72.0"
+  },
+  "product": {
+    "freshworks_crm": {
+      "events": {
+        "onContactUpdate": {
+          "handler": "onContactCreateHandler"
+        }
+      }
+    }
+  },
+  "whitelisted-domains": [
+    "https://elgi-staging.freshworks.com",
+    "https://elgi-staging.myfreshworks.com",
+    "https://elgiequipmentslimited-team.myfreshworks.com",
+    "https://elgiequipmentslimited-team.freshworks.com"
+  ],
+  "engines": {
+    "node": "12.22.0",
+    "fdk": "7.5.1"
+  }
+}
