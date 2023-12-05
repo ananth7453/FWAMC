@@ -133,13 +133,13 @@ console.log('inside create account ' + fwaccountid+" "+zip)
         request(options2, function (error2, response2) {
           if (error2) throw new Error(error2);
           var _salesAccount = (JSON.parse(response2.body)).sales_account;
-          var zipcode = "";
+          //var zipcode = "";
 
           console.log('Account Zip Code ' + _salesAccount.zipcode)
           if (_salesAccount.zipcode == null) {
-            zipcode = zip;
+            //zipcode = zip;
           }else{
-            zipcode = _salesAccount.zipcode;
+            //zipcode = _salesAccount.zipcode;
           }
 
           // console.log(JSON.stringify({
